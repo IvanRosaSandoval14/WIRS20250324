@@ -25,10 +25,14 @@ public partial class Product
 
     [Display(Name = "Bodega Producto")]
     [Required(ErrorMessage = "La Bodega es obligatoria.")]
+    
+
     public int? WarehouseId { get; set; }
 
+    [Display(Name = "ID Marca")]
     public int? BrandId { get; set; }
 
+    [Display(Name = "Notas")]
     public string? Notes { get; set; }
 
     public virtual Brand? Brand { get; set; }
