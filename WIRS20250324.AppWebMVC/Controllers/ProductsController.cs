@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
@@ -9,6 +10,7 @@ using WIRS20250324.AppWebMVC.Models;
 
 namespace WIRS20250324.AppWebMVC.Controllers
 {
+    [Authorize(Roles = "GERENTE")]
     public class ProductsController : Controller
     {
         private readonly Test20250324DbContext _context;
