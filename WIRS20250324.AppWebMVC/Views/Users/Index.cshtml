@@ -6,7 +6,9 @@
 
 
 <h1 class="display-4" style="font-family:'Cambria Math'">Buscar Usuarios</h1>
+
 <form asp-action="Index">
+
     <div class="row">
         <div class="col-4">
             <div class="form-group">
@@ -20,7 +22,6 @@
                 <textarea name="Email" class="form-control"></textarea>
             </div>
         </div>
-
         <div class="col-8">
             <div class="form-group">
                 <label class="control-label">Rol</label>
@@ -28,31 +29,48 @@
             </div>
         </div>
 
-    </div>
-    <div class="row">
+        <div class="row">
 
-        <div class="col-4">
-            <div class="form-group">
-                <label class="control-label">Cant. Registros</label>
-                <select name="topRegistro" class="form-control">
-                    <option selected value="10">10</option>
-                    <option value="20">20</option>
-                    <option value="60">60</option>
-                    <option value="100">100</option>
-                    <option value="500">500</option>
-                    <option value="1000">1000</option>
-                    <option value="0">Todos</option>
-                </select>
+            <div class="col-4">
+                <div class="form-group">
+                    <label class="control-label">Cant. Registros</label>
+                    <select name="topRegistro" class="form-control">
+                        <option selected value="10">10</option>
+                        <option value="20">20</option>
+                        <option value="60">60</option>
+                        <option value="100">100</option>
+                        <option value="500">500</option>
+                        <option value="1000">1000</option>
+                        <option value="0">Todos</option>
+                    </select>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="row mt-3">
-        <div class="col-12">
-            <input type="submit" value="Buscar" class="btn btn-secondary btn-sm" />
-            <a class="btn btn-dark btn-sm" asp-action="Create">Ir a crear</a>
+        <br />
+        <div class="row mt-3">
+            <div class="col-12">
+                <input type="submit" value="Buscar" class="btn btn-secondary btn-sm" />
+                <a as class="btn btn-dark btn-sm" asp-action="Create">Ir a crear</a>
+            </div>
         </div>
+
+
     </div>
+
+
+
 </form>
+
+
+
+
+
+
+
+
+
+
+
 <hr />
 
 

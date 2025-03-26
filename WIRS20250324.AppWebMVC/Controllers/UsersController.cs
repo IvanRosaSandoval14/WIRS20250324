@@ -67,6 +67,16 @@ namespace WIRS20250324.AppWebMVC.Controllers
         // GET: User/Create
         public IActionResult Create()
         {
+            // Lista de roles disponibles (Administrador y GERENTE)
+            var roles = new List<SelectListItem>
+    {
+        new SelectListItem { Text = "Administrador", Value = "Administrador" },
+        new SelectListItem { Text = "GERENTE", Value = "GERENTE" }
+    };
+
+            // Pasar la lista de roles a la vista
+            ViewData["Roles"] = roles;
+
             return View();
         }
 

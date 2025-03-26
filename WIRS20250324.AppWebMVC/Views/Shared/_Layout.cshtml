@@ -47,7 +47,7 @@
 
                      @if (User.Identity.IsAuthenticated)
                     {
-                        var nombre = User.FindFirst("Username")?.Value;
+                        var nombre = User.FindFirst("Nombre")?.Value;
                         <a class="nav-link text-dark" asp-area="" asp-controller="Users" asp-action="CerrarSession">Cerrar Sesion</a>
                         <span>@nombre</span>
                     }

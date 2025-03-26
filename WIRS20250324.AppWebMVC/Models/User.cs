@@ -25,7 +25,7 @@ public partial class User
 
     [Display(Name = "Rol")]
     [Required(ErrorMessage = "El Rol es obligatorio.")]
-    public string Role { get; set; } = null!;
+    public string? Role { get; set; } = null!;
 
     [Display(Name = "Ingresar Nota")]
     public string? Notes { get; set; }
